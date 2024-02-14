@@ -158,7 +158,7 @@ OPERATOR - symbol used for calculations or evaluations. They have rank, preceden
     int e = ++d && d;
     printf("E=%d",e);
     printf("D=%d",d);}
-    ```
+ ```
 
 ## relational operators 
     5>4>3
@@ -166,4 +166,23 @@ OPERATOR - symbol used for calculations or evaluations. They have rank, preceden
     1>3 false
     so result is 0 
 
-    
+## BITWISE OPERATOR
+
+1. we should us %u (it takes all the bits as unsigned integer)
+
+```c
+    int main()
+    {
+        int a =2 , b=3;
+        printf("%u&%u=%u/n",a,b,a&b);
+
+    }
+ ```
+
+## ternary operaotor
+1. only one ternary operator {?}
+   
+        (exp1)?exp(2);exp(3)  
+        
+        
+     ** if exp 1 is true exp2 is evaluated else exp 3 is evaluated **
