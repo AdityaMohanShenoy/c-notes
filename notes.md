@@ -187,3 +187,4 @@ OPERATOR - symbol used for calculations or evaluations. They have rank, preceden
         
      ** if exp 1 is true exp2 is evaluated else exp 3 is evaluated **
 
+# clear the ith bit 
