@@ -2,6 +2,7 @@
     1. DIFFERENCE BETWEEN FORMATED AND UNFORMATED INPUT OUTPUT FUNCTION 
     2. VARIABLE DECLARATION AND INITIALISATION 
         ans : declaration int a;    initialisation(value) int a = 2;
+    3. 
 # C PROGRAM BEHIND THE SCENES [[gfg]](https://www.geeksforgeeks.org/compiling-a-c-program-behind-the-scenes/)
     1. pre processor = expands all micros(stdio.h,add(a,b)=a+b)=output file = filename.i
     
@@ -21,6 +22,22 @@
     flags
 
     %[flags][field_width][precision]conversion_char  -> [] - optional
+
+# "char" datatype
+    1. It can also store symbols such as '!', and digits such as '7'.
+    
+    2. Regarding memory allocation, a signed char lets you store numbers ranging from [-128 to 127], and uses at least 1 byte (or 8 bits) of memory.An unsigned char stores numbers ranging from [0 to 255].
+   
+ ```c
+        #include <stdio.h>
+
+        int main(void) 
+        {
+
+        char initial = 'D';
+
+    }
+``` 
 
 # 
 
