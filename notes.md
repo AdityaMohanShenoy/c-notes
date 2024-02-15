@@ -1,3 +1,8 @@
+# C PROGRAM BEHIND THE SCENES [gfg](https://www.geeksforgeeks.org/compiling-a-c-program-behind-the-scenes/)
+    1. pre processor = expands all micros(stdio.h,add(a,b)=a+b)=output file = filename.i
+    2. compiling = conversts evrythong to assembly level language = output file = filename.s
+    3. assembler = converts assembly level code to machine level code = output file = filename.o
+    4. linker = links all the definition of the functions used in the main code (printf) ** adds some extra code ** = a.exe or -o filename.exe
 # FORMAT STRING
 
     field_width  
