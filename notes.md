@@ -1,3 +1,6 @@
+# QUESTIONS 
+    1. DIFFERENCE BETWEEN FORMATED AND UNFORMATED INPUT OUTPUT FUNCTION 
+    2. VARIABLE DECLARATION AND INITIALISATION 
 # C PROGRAM BEHIND THE SCENES [[gfg]](https://www.geeksforgeeks.org/compiling-a-c-program-behind-the-scenes/)
     1. pre processor = expands all micros(stdio.h,add(a,b)=a+b)=output file = filename.i
     
