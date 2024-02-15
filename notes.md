@@ -136,6 +136,8 @@ unformatted input takes one char unformatted output prints one char
     \r - takes cursor to the beginning of the line
     \"...."\ - for double quotes in output
 
+# literals
+
 # OPERATORS AND EXPRESSIONS
 OPERATOR - symbol used for calculations or evaluations. They have rank, precedence and associativity.
 
