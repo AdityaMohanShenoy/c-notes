@@ -1,5 +1,7 @@
 # QUESTIONS 
     1. DIFFERENCE BETWEEN FORMATED AND UNFORMATED INPUT OUTPUT FUNCTION 
+        ans : format = They tell the program how to format or interpret the data being passed to or read from the scanf() and printf() functions.
+
     2. VARIABLE DECLARATION AND INITIALISATION 
         ans : declaration int a;    initialisation(value) int a = 2;
     3. 
@@ -39,11 +41,9 @@
     }
 ``` 
 
-# 
+# FORMAT SPECIFIERS
 
-    %e - float printed in exponential form 
-    %g - strips trailing zeroes
-    %u - unsigned int
+![format specifiers](image.png)
 
 ## to check max value of a data type in your system 
     INT_MAX
