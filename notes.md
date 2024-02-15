@@ -4,7 +4,11 @@
 
     2. VARIABLE DECLARATION AND INITIALISATION 
         ans : declaration int a;    initialisation(value) int a = 2;
-    3. 
+
+    3. DIFFERENCE BETWEEN SEMATIC AND LOGICAL ERROR
+        ANS: ● A semantic error is a type of error that occurs when the code violates the rules or constraints of the language, leading to undefined behavior. Semantic errors are caused by incorrect usage of language constructs or incorrect assumptions about the behavior of the program
+    ● A logical error occurs when the program runs without any syntax errors or warnings, but the output or behavior is not what was intended due to a mistake in the programmer’s
+    logic or reasoning. Logical errors are sometimes called "bugs" in the program
 # C PROGRAM BEHIND THE SCENES [[gfg]](https://www.geeksforgeeks.org/compiling-a-c-program-behind-the-scenes/)
     1. pre processor = expands all micros(stdio.h,add(a,b)=a+b)=output file = filename.i
     
