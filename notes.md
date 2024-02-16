@@ -222,3 +222,9 @@ OPERATOR - symbol used for calculations or evaluations. They have rank, preceden
         
      ** if exp 1 is true exp2 is evaluated else exp 3 is evaluated **
      
+
+# control structutres 
+    1. conditioanl - if, if else, nested if, switch 
+    2. unconditional - goto , return 
+    3. loop - for ,while,do while
+   
