@@ -233,4 +233,6 @@ OPERATOR - symbol used for calculations or evaluations. They have rank, preceden
     3. loop - for ,while,do while
    
 
-   
+# pls reserch 
+to remove keyboard buffer #include <stdioe_ext.h>
+fpurge(stdin)
