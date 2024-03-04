@@ -12,11 +12,13 @@ int main(){
     unsigned long long int account_numberincr;
     int amount;
     int choice;
+    int dummy;
 
     printf("---------------Welcome To PES BANK OF PES----------------------------\n");
 
     printf("Enter your name :");
     scanf("%s",&name);
+
 
     printf("\nEnter your phone number:");
     scanf("%llu",&phone_number);
