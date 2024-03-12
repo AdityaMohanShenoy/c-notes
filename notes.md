@@ -35,7 +35,7 @@
            * %x gives the hexadecimal equivalent *
        10.A constant has only R-value. An initialized variable has both l and r value. An expression of the form a + b is only a R-value.
        11.*The only operator which gives a value back is the dereferencing operator*.
-       12. *%p is format specifier for an adress location* 
+       12. *%p is format specifier for an adress location pointer * 
        13. the size of a pointer in 64 bit pc is always 8 bytes irrespestive of the type
        14. 
         
