@@ -28,9 +28,11 @@
     extern int a; // We will discuss this in Unit - 5
 7. sizeof is compile time uniary operator
 8. The limits.h header file has the maximum and min *value* a data type can store
-9. [![INTEGER LITERAL](image-2.png)]
+9.  ![INTEGER LITERAL](image-2.png)
     ![OUTPUT](image-3.png)
-
+    * %d converts octal or hex to decimal *
+    * %o gives the octal value *
+    * %x gives the hexadecimal equivalent *
         
 # C PROGRAM BEHIND THE SCENES [[gfg]](https://www.geeksforgeeks.org/compiling-a-c-program-behind-the-scenes/)
     1. pre processor = expands all micros(stdio.h,add(a,b)=a+b)=output file = filename.i
