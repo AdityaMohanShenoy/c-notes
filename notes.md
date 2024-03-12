@@ -37,6 +37,7 @@
        11.*The only operator which gives a value back is the dereferencing operator*.
        12. *%p is format specifier for an adress location* 
        13. the size of a pointer in 64 bit pc is always 8 bytes irrespestive of the type
+       14. 
         
 # C PROGRAM BEHIND THE SCENES [[gfg]](https://www.geeksforgeeks.org/compiling-a-c-program-behind-the-scenes/)
     1. pre processor = expands all micros(stdio.h,add(a,b)=a+b)=output file = filename.i
@@ -169,7 +170,7 @@ unformatted input takes one char unformatted output prints one char
 
 # OPERATORS AND EXPRESSIONS
 OPERATOR - symbol used for calculations or evaluations. They have rank, precedence and associativity.
-
+    ![good example]](image-4.png)
 
   ## based on operation:
     -arithmetic
