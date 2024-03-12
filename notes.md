@@ -23,6 +23,12 @@
     buffer.
     // fflush(stdin) –windows
 5. *TYPE IS A COMPILE TIME MECHANISM*
+6. If we want to only declare variables and not to define it i.e. we do not want to
+    allocate memory, then the following declaration can be used.
+    extern int a; // We will discuss this in Unit - 5
+7. sizeof is compile time uniary operator
+8. The limits.h header file has the maximum and min *value* a data type can store
+9. 
 
         
 # C PROGRAM BEHIND THE SCENES [[gfg]](https://www.geeksforgeeks.org/compiling-a-c-program-behind-the-scenes/)
