@@ -12,6 +12,12 @@
     4. Rvlaue and Lvalue
         ANS : pesu notes pg 49 
 
+# intresting points
+ 1. char ch='pqrs' output is s
+ 2. n = scanf(“%d,%d”,&a,&b); //If user enters 20 30, a becomes 20, value of b is undefined
+    and 1 is returned by the function
+ 3. 
+
         
 # C PROGRAM BEHIND THE SCENES [[gfg]](https://www.geeksforgeeks.org/compiling-a-c-program-behind-the-scenes/)
     1. pre processor = expands all micros(stdio.h,add(a,b)=a+b)=output file = filename.i
