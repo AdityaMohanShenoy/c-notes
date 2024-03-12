@@ -35,7 +35,8 @@
            * %x gives the hexadecimal equivalent *
        10.A constant has only R-value. An initialized variable has both l and r value. An expression of the form a + b is only a R-value.
        11.*The only operator which gives a value back is the dereferencing operator*.
-       10. *%p is format specifier for an adress location* 
+       12. *%p is format specifier for an adress location* 
+       13. the size of a pointer in 64 bit pc is always 8 bytes irrespestive of the type
         
 # C PROGRAM BEHIND THE SCENES [[gfg]](https://www.geeksforgeeks.org/compiling-a-c-program-behind-the-scenes/)
     1. pre processor = expands all micros(stdio.h,add(a,b)=a+b)=output file = filename.i
