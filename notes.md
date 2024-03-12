@@ -14,27 +14,28 @@
 
 # intresting points
 
- 1. char ch='pqrs' output is s
- 2. Assignment is considered as an expression in ‘C’
- 3. n = scanf(“%d,%d”,&a,&b); //If user enters 20 30, a becomes 20, value of b is undefined
-    and 1 is returned by the function
- 4. // If I enter p<space>q, q will not be stored in y. Only space is stored. This can be avoided using
-    fflush(stdin) function between two getchar function calls. This function clears the key board
-    buffer.
-    // fflush(stdin) –windows
-5. *TYPE IS A COMPILE TIME MECHANISM*
-6. If we want to only declare variables and not to define it i.e. we do not want to
-    allocate memory, then the following declaration can be used.
-    extern int a; // We will discuss this in Unit - 5
-7. sizeof is compile time uniary operator
-8. The limits.h header file has the maximum and min *value* a data type can store
-9.  ![INTEGER LITERAL](image-2.png)
-    ![OUTPUT](image-3.png)
-    * %d converts octal or hex to decimal *
-    * %o gives the octal value *
-    * %x gives the hexadecimal equivalent *
-10.A constant has only R-value. An initialized variable has both l and r value. An expression of the form a + b is only a R-value.
-11.*The only operator which gives a value back is the dereferencing operator*.
+       1. char ch='pqrs' output is s
+       2. Assignment is considered as an expression in ‘C’
+       3. n = scanf(“%d,%d”,&a,&b); //If user enters 20 30, a becomes 20, value of b is undefined
+           and 1 is returned by the function
+       4. // If I enter p<space>q, q will not be stored in y. Only space is stored. This can be avoided using
+           fflush(stdin) function between two getchar function calls. This function clears the key board
+           buffer.
+           // fflush(stdin) –windows
+       5. *TYPE IS A COMPILE TIME MECHANISM*
+       6. If we want to only declare variables and not to define it i.e. we do not want to
+           allocate memory, then the following declaration can be used.
+           extern int a; // We will discuss this in Unit - 5
+       7. sizeof is compile time uniary operator
+       8. The limits.h header file has the maximum and min *value* a data type can store
+       9.  ![INTEGER LITERAL](image-2.png)
+           ![OUTPUT](image-3.png)
+           * %d converts octal or hex to decimal *
+           * %o gives the octal value *
+           * %x gives the hexadecimal equivalent *
+       10.A constant has only R-value. An initialized variable has both l and r value. An expression of the form a + b is only a R-value.
+       11.*The only operator which gives a value back is the dereferencing operator*.
+       10. *%p is format specifier for an adress location* 
         
 # C PROGRAM BEHIND THE SCENES [[gfg]](https://www.geeksforgeeks.org/compiling-a-c-program-behind-the-scenes/)
     1. pre processor = expands all micros(stdio.h,add(a,b)=a+b)=output file = filename.i
