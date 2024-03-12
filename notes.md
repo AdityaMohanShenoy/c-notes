@@ -33,6 +33,8 @@
     * %d converts octal or hex to decimal *
     * %o gives the octal value *
     * %x gives the hexadecimal equivalent *
+10.A constant has only R-value. An initialized variable has both l and r value. An expression of the form a + b is only a R-value.
+11.*The only operator which gives a value back is the dereferencing operator*.
         
 # C PROGRAM BEHIND THE SCENES [[gfg]](https://www.geeksforgeeks.org/compiling-a-c-program-behind-the-scenes/)
     1. pre processor = expands all micros(stdio.h,add(a,b)=a+b)=output file = filename.i
