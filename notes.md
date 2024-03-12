@@ -13,10 +13,16 @@
         ANS : pesu notes pg 49 
 
 # intresting points
+
  1. char ch='pqrs' output is s
- 2. n = scanf(“%d,%d”,&a,&b); //If user enters 20 30, a becomes 20, value of b is undefined
+ 2. Assignment is considered as an expression in ‘C’
+ 3. n = scanf(“%d,%d”,&a,&b); //If user enters 20 30, a becomes 20, value of b is undefined
     and 1 is returned by the function
- 3. 
+ 4. // If I enter p<space>q, q will not be stored in y. Only space is stored. This can be avoided using
+    fflush(stdin) function between two getchar function calls. This function clears the key board
+    buffer.
+    // fflush(stdin) –windows
+5. *TYPE IS A COMPILE TIME MECHANISM*
 
         
 # C PROGRAM BEHIND THE SCENES [[gfg]](https://www.geeksforgeeks.org/compiling-a-c-program-behind-the-scenes/)
