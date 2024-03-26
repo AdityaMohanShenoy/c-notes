@@ -18,13 +18,16 @@ int main(){
 
     printf("Enter your name :");
     scanf("%s",&name);
+    fflush(stdin);
 
 
     printf("\nEnter your phone number:");
     scanf("%llu",&phone_number);
+    fflush(stdin);
 
     printf("\nEnter your adhaar number :");
     scanf("%llu",&adhaar_number);
+    fflush(stdin);
 
     account_numberincr = 1234567890;
     account_number=account_numberincr++;
