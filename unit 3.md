@@ -8,4 +8,9 @@
 # string manipulation and string.h
 * strlen gives the length of string withought counting the null character 
 * sizeof gives the size including null character
-* 
+* Functions
+  * int strlen(char *str)
+  * char strcpy(char *dest,const char * sorce)// string copy 
+  * char strcat(char *dist,const char *source) // string concatination 
+  * char* strchr( const char *str , char ch) //gives pointer to the first occurenece of ch in const str 
+  * char* strrchr
