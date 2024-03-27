@@ -14,3 +14,5 @@
   * char strcat(char *dist,const char *source) // string concatination 
   * char* strchr( const char *str , char ch) //gives pointer to the first occurenece of ch in const str 
   * char* strrchr
+  * strncpy(dest,src,n) // copies n characters of a string withought null char so we have to to //  dest[n]="/0"
+  * 
