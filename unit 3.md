@@ -7,4 +7,5 @@
   
 # string manipulation and string.h
 * strlen gives the length of string withought counting the null character 
-* sizeof
+* sizeof gives the size including null character
+* 
