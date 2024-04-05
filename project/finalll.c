@@ -45,12 +45,20 @@ int main() {
             case 1:
                 printf("Enter your Name: ");
                 scanf("%s", name);
+                printf("\n");
+                fflush(stdin);
                 printf("Enter your Adhaar Number: ");
                 scanf("%llu", &adhaar);
+                printf("\n");
+                fflush(stdin);
                 printf("Enter your Mobile Number: ");
                 scanf("%llu", &mobile);
+                printf("\n");
+                fflush(stdin);
                 printf("Enter your Age: ");
                 scanf("%d", &age);
+                printf("\n");
+                fflush(stdin);
                 createAccount(accountNumbers, accountBalances, names, adhaars, mobiles, ages, &numAccounts, name, adhaar, mobile, age, &initialaccountnumber);
                 printf("Account created successfully. Account Number: %llu\n", accountNumbers[numAccounts - 1]);
                 break;
