@@ -14,6 +14,12 @@ int main(){
     int choice;
     int dummy;
 
+
+    //Fuction Prototype
+    void createAccount(unsigned long long int accountNumbers[], float accountBalances[], char names[][25],unsigned long long int adhaars[],unsigned long long int mobiles[],int ages[],int *numAccounts,char name[],unsigned long long int adhaar,unsigned long long int mobile,int age);
+    void deposit(unsigned long long int accountNumbers[], float accountBalances[], int numAccounts, int accountNumber, float amount);
+    void withdraw(unsigned long long int accountNumbers[], float accountBalances[], int numAccounts, int accountNumber, float amount);
+    void display(unsigned long long int accountNumbers[], float accountBalances[], char names[][25],unsigned long long int adhaars[],unsigned long long int mobiles[],int ages[],int numAccounts, int accountNumber);
     printf("---------------Welcome To PES BANK OF PES----------------------------\n");
 
     printf("Enter your name :");
