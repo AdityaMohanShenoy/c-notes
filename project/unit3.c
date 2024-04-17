@@ -115,8 +115,11 @@ void deposit(ACCOUNT accounts[], int numAccounts, unsigned long long int account
     }
 
     accounts[indexvalue].balance += amount;
-    printf("Amount Deposited: %f",accounts[indexvalue].balance);
+    printf("Amount Deposited: %.2f\n", amount);
+    printf("Updated Balance: %.2f\n", accounts[indexvalue].balance);
 }
+
+
 
 void withdraw(ACCOUNT accounts[], int numAccounts, unsigned long long int accountNumber, float amount) {
     int indexvalue = findIndex(accounts, numAccounts, accountNumber);
@@ -132,7 +135,9 @@ void withdraw(ACCOUNT accounts[], int numAccounts, unsigned long long int accoun
     }
 
     accounts[indexvalue].balance -= amount;
+    printf("Amount Successfully withdrawn: %.2f\n", amount);
 }
+
 
    
 void display(ACCOUNT accounts[], int numAccounts, unsigned long long int accountNumber)
