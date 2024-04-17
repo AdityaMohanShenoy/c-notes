@@ -49,17 +49,15 @@ int main() {
         switch (choice) {
             case 1:
                 printf("Enter your Name: ");
-                scanf("%50s", name);
-                
+                getchar(); // Consume the newline character left in the buffer
+                fgets(name, sizeof(name), stdin); // Read the entire line, including spaces
+                name[strcspn(name, "\n")] = '\0'; // Remove the trailing newline character
                 printf("Enter your Adhaar Number: ");
                 scanf("%llu", &adhaar);
-                
                 printf("Enter your Mobile Number: ");
                 scanf("%llu", &mobile);
-                
                 printf("Enter your Age: ");
                 scanf("%d", &age);
-                  
                 createAccount(accounts, &numAccounts, name, adhaar, mobile, age, &initialaccountnumber);
                 printf("Account created successfully. Account Number: %llu\n", accounts[numAccounts - 1].accountNumber);
                 break;
@@ -92,6 +90,7 @@ int main() {
 
     return 0;
 }
+
 
 void createAccount(ACCOUNT accounts[], int *numAccounts, char name[], unsigned long long int adhaar, unsigned long long int mobile, int age, unsigned long long int *initialaccountnumber) {
     int acnumber = *numAccounts;
