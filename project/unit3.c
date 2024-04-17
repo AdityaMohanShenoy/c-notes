@@ -115,6 +115,7 @@ void deposit(ACCOUNT accounts[], int numAccounts, unsigned long long int account
     }
 
     accounts[indexvalue].balance += amount;
+    printf("Amount Deposited: %f",accounts[indexvalue].balance);
 }
 
 void withdraw(ACCOUNT accounts[], int numAccounts, unsigned long long int accountNumber, float amount) {
