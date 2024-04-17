@@ -7,7 +7,7 @@
 typedef struct Account {
     unsigned long long int accountNumber;
     float balance;
-    char name[25];
+    char name[50];
     unsigned long long int adhaar;
     unsigned long long int mobile;
     int age;
@@ -49,7 +49,7 @@ int main() {
         switch (choice) {
             case 1:
                 printf("Enter your Name: ");
-                scanf("%24s", name);
+                scanf("%50s", name);
                 
                 printf("Enter your Adhaar Number: ");
                 scanf("%llu", &adhaar);
