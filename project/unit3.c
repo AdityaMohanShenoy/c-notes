@@ -28,7 +28,7 @@ int main() {
     int numAccounts = 0;
     unsigned long long int initialaccountnumber = INITIAL_ACCOUNT_NUMBER;
     int choice;
-    char name[25];
+    char name[100];
     unsigned long long int adhaar;
     unsigned long long int mobile;
     int age;
@@ -49,13 +49,17 @@ int main() {
         switch (choice) {
             case 1:
                 printf("Enter your Name: ");
-                scanf("%s", name);
+                scanf("%24s", name);
+                
                 printf("Enter your Adhaar Number: ");
                 scanf("%llu", &adhaar);
+                
                 printf("Enter your Mobile Number: ");
                 scanf("%llu", &mobile);
+                
                 printf("Enter your Age: ");
                 scanf("%d", &age);
+                  
                 createAccount(accounts, &numAccounts, name, adhaar, mobile, age, &initialaccountnumber);
                 printf("Account created successfully. Account Number: %llu\n", accounts[numAccounts - 1].accountNumber);
                 break;
@@ -146,4 +150,13 @@ void display(ACCOUNT accounts[], int numAccounts, unsigned long long int account
     printf("Mobile Number: %llu\n", accounts[indexvalue].mobile);
     printf("Current Balance: %.2f\n", accounts[indexvalue].balance);
 }
+int findIndex(ACCOUNT accounts[], int numAccounts, unsigned long long int accountNumber) {
+    for (int i = 0; i < numAccounts; ++i) {
+        if (accounts[i].accountNumber == accountNumber) {
+            return i; // Return the index if the account number is found
+        }
+    }
+    return -1; // Return -1 if the account number is not found
+}
+
 
