@@ -17,7 +17,7 @@ int main()
       
     }
 
-    while(fgets(line,sizeof(line),fp))
+    while(fgets(line,1000,fp)!=NULL)
     {
         strtok(line,",");
         while(n <3)
