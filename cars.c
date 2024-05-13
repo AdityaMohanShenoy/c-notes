@@ -6,9 +6,10 @@ int main()
 {
     FILE *fp;
     char line[1000];
-    char *token;
+    char *token,*CARID,*BRAND,*MODEL;
     int count = 0;
     int n=0;
+
 
     fp = fopen("cars.csv","r");
     if (fp==NULL)
@@ -19,17 +20,17 @@ int main()
 
     while(fgets(line,1000,fp)!=NULL)
     {
-        strtok(line,",");
-        while(n <3)
-        {
-            token = strtok(NULL,",");//token will have year now 
-            n++;
-        }
+        CARID=strtok(line,",");
+        BRAND = strtok(NULL,",");
+        MODEL = strtok(NULL,",");
+        token = strtok(NULL,",");
+        
+
 
         if (strcmp(token,"2020")==0)
         {
             count++;
-            printf("%d",count);
+            //printf("%d",count);
         }
     }
     printf("%d",count);
