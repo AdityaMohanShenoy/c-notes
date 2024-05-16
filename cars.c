@@ -6,7 +6,7 @@ int main()
 {
     FILE *fp;
     char line[1000];
-    char *token,*CARID,*BRAND,*MODEL;
+    char *token,*CARID,*BRAND,*MODEL,*YEAR;
     int count = 0;
     int n=0;
 
@@ -23,16 +23,15 @@ int main()
         CARID=strtok(line,",");
         BRAND = strtok(NULL,",");
         MODEL = strtok(NULL,",");
-        token = strtok(NULL,",");
-        
+        YEAR = strtok(NULL,",");
+        token =strtok(NULL,",");
 
 
-        if (strcmp(token,"2020")==0)
+        if (strcmp(token,"40001")==0)
         {
-            count++;
-            //printf("%d",count);
+
         }
     }
-    printf("%d",count);
+
 
 }
