@@ -19,7 +19,7 @@ void read_accounts(BANKSYS accounts[]) {
     if (i < 10) {
         printf("Enter details for account %d\n", i + 1);
         printf("Enter Name: ");
-        scanf("%{^\n]s", accounts[i].name);
+        scanf("%s", accounts[i].name);
         getchar();  // To consume the newline character left by scanf
 
         printf("Enter age: ");
