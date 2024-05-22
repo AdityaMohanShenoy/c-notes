@@ -182,9 +182,12 @@ int main() {
                 break;
             case 5:
                 sortaccno(accounts);
+                break;
             case 6:
                 sortname(accounts);
+                break;
             case 7:
+                printf("thank you for using our banking system");
                 exit(0);
             default:
                 printf("Invalid choice. Please try again.\n");
