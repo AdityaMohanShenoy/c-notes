@@ -114,6 +114,40 @@ void withdraw(BANKSYS accounts[]) {
     }
     printf("Account number not found.\n");
 }
+void sortaccno(BANKSYS accounts[]) {
+    for (int i = 0; i < num_accounts - 1; i++) {
+        for (int j = i + 1; j < num_accounts; j++) {
+            if (accounts[i].acc_no < accounts[j].acc_no) {
+                BANKSYS temp = accounts[i];
+                accounts[i] = accounts[j];
+                accounts[j] = temp;
+            }
+        }
+    }
+    printf("Accounts sorted in descending order of account numbers.\n");
+    printf("Account Number\tName\n");
+    for (int i = 0; i < num_accounts; i++) {
+        printf("%d\t\t%s\n", accounts[i].acc_no, accounts[i].name);
+    }
+}
+void sortname(BANKSYS accounts[]) {
+    for (int i = 0; i < num_accounts - 1; i++) {
+        for (int j = i + 1; j < num_accounts; j++) {
+            if (strcmp(accounts[i].name, accounts[j].name) > 0) {
+                BANKSYS temp = accounts[i];
+                accounts[i] = accounts[j];
+                accounts[j] = temp;
+            }
+        }
+    
+    }
+    printf("Accounts sorted in ascending order of names.\n");
+    printf("Account Number\tName\n");
+    for (int i = 0; i < num_accounts; i++) {
+        printf("%d\t\t%s\n", accounts[i].acc_no
+        , accounts[i].name);
+    }
+}
 
 int main() {
     BANKSYS accounts[10];
@@ -127,8 +161,8 @@ int main() {
         printf("2. Deposit\n");
         printf("3. Withdraw\n");
         printf("4. Display details\n");
-        printf("5.sort accounts by account number(descending order)");
-        printf("6. sort accounts by account name(ascending order)");
+        printf("5.sort accounts by account number(descending order)\n");
+        printf("6. sort accounts by account name(ascending order)\n");
         printf("7. Exit\n");
         printf("Choice: ");
         scanf("%d", &choice);
@@ -147,9 +181,9 @@ int main() {
                 display_details(accounts);
                 break;
             case 5:
-                sort_accno(accounts);
+                sortaccno(accounts);
             case 6:
-                
+                sortname(accounts);
             case 7:
                 exit(0);
             default:
@@ -160,41 +194,6 @@ int main() {
     return 0;
 }
 
-
-void sort_accno(BANKSYS accounts[]) {
-    for (int i = 0; i < num_accounts - 1; i++) {
-        for (int j = i + 1; j < num_accounts; j++) {
-            if (accounts[i].acc_no < accounts[j].acc_no) {
-                BANKSYS temp = accounts[i];
-                accounts[i] = accounts[j];
-                accounts[j] = temp;
-            }
-        }
-    }
-    printf("Accounts sorted in descending order of account numbers.\n");
-    printf("Account Number\tName\n");
-    for (int i = 0; i < num_accounts; i++) {
-        printf("%d\t\t%s\n", accounts[i].acc_no, accounts[i].name);
-    }
-}
-void sort_name(BANKSYS accounts[]) {
-    for (int i = 0; i < num_accounts - 1; i++) {
-        for (int j = i + 1; j < num_accounts; j++) {
-            if (strcmp(accounts[i].name, accounts[j].name) > 0) {
-                BANKSYS temp = accounts[i];
-                accounts[i] = accounts[j];
-                accounts[j] = temp;
-            }
-        }
-    
-    }
-    printf("Accounts sorted in ascending order of names.\n");
-    printf("Account Number\tName\n");
-    for (int i = 0; i < num_accounts; i++) {
-        printf("%d\t\t%s\n", accounts[i].acc_no
-        , accounts[i].name);
-    }
-}
 
 
 
